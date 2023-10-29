@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<STYLE>
+     .container {
+       height:120h;
+       width:96vw;
+       display: grid;
+       grid-template-areas: 'HEADER HEADER HEADER HEADER'
+                            'MENU MENU MENU MENU'
+                            'SEARCH SEARCH SEARCH SEARCH'
+                            'FOOTER FOOTER FOOTER FOOTER';
+                            
+        border:2px groove black;
+        background-image: url("googleimage.jpeg");
+        padding:0px;
+        row-gap:5px;
+       }
+       
+       .header {
+        grid-area: HEADER;
+        display: flex;
+        justify-content: flex-end;
+        gap:10px;
+        
+
+       }
+     
+  .menu {
+    grid-area: MENU;
+   
+    
+    
+  }
+  h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 100px;
+    letter-spacing: 2px;
+    color:blue;
+    text-align: center;
+  }
+  .search {
+    grid-area:SEARCH;
+     display: flex;
+    justify-content: center ;
+    gap:10px;
+    
+  }
+  img {
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    
+  }
+  .footer{
+       grid-area: FOOTER;
+       display: flex;
+       gap:20px;
+       justify-content: space-evenly;
+
+    
+}
+.footer1{
+    display:flex;
+    justify-content: flex-start;
+}
+.footer2{
+    display:flex;
+    justify-content: flex-end;
+}
+</STYLE>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3><a href="#">Gmail</a></h3>
+            <h3><a href="#">Images</a></h3>
+            <h3><a href="#">Labs</a></h3>
+            <h3><a href="#">Features</a></h3>
+        </div>
+        <div class="menu" align="center">
+            <h1 >Google</h1>
+            <h3>Search Here:</h3>
+            <input type="text" name="" id="" size="50">
+        </div>
+          <div class="search">
+                 <div class="card1">
+                    <img src="vijay.jpg" alt="">
+                    <p>Thalapathy Files</p>
+                 </div>
+                 <div class="card2">
+                    <img src="vijay3.jpg" alt="">
+                    <p>Thalapathy Files</p>
+                 </div>
+                 <div class="card2">
+                    <img src="vijay4.jpg" alt="">
+                    <p>Thalapathy Files</p>
+                 </div>
+           </div>   
+          <div class="footer">
+            <p class="footer1"><a href="#">Recommendations</a></p>
+            <p class="footer2"><a href="#">Edit</a></p>
+          </div>
+        
+    </div>
+</body>
+</html>
